@@ -37,3 +37,8 @@ Saya suka hal-hal yang sederhana. Goal saya adalah fokus pada tampilan visual, i
 ### Develop.
 Sebagai front end developer dan calon full stack developer masa depan, saya tahu bagaimana sebuah website di tampilkan dalam berbagai media yang sesuai dengan perkembangan jaman.
 
+## Future Plans
+Website ini nantinya akan menjadi portfolio dari hasil-hasil karya saya yang akan datang. Adapun website ini kedepannya akan berisi:
+* catatan-catatan penting mengenai coding yang telah dipelajari (blog)
+* karya-karya berupa coding yang telah dikerjakan
+* tips and trick berkaitan dengan dunia pemrograman
