@@ -17,15 +17,8 @@ Adapun tag HTML yang digunakan pada situs ini antara lain
 >  - div
 
 > **Syntax Penting**
->  - color
->  - font-size
->  - font-family
->  - background
->  - font-weight
->  - text-align
->  - text-decoration
->  - position
->  - cursor
+>  - font-family: Lato
+>
 
 ## About Me
 Saya adalah graphic and web designer and developer yang berlokasi di Jakarta, Indonesia. Saya memiliki passion di dunia website. Website yang tidak hanya baik di layar besar, namun juga bagus di handphone (responsive web).
