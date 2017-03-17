@@ -18,7 +18,17 @@ Adapun tag HTML yang digunakan pada situs ini antara lain
 
 > **Syntax Penting**
 >  - font-family: Lato
->
+>  - Background-master: #444444 
+>  - Background-primary: #BF212F 
+>  - Background-info: #999999 
+>  - Background-orange: #F89521 
+>  - Background-success: #38B248 
+>  - Background-danger: #E04F4F 
+>  - Background-warning: #FFC907 
+>  - h1: 2em
+>  - h2: 1.5em
+>  - h3: 1.3em
+>  - h4: 1.1em
 
 ## About Me
 Saya adalah graphic and web designer and developer yang berlokasi di Jakarta, Indonesia. Saya memiliki passion di dunia website. Website yang tidak hanya baik di layar besar, namun juga bagus di handphone (responsive web).
@@ -26,3 +36,4 @@ Saya adalah graphic and web designer and developer yang berlokasi di Jakarta, In
 Saya suka hal-hal yang sederhana. Goal saya adalah fokus pada tampilan visual, isi pesan dan penyampaian pesan yang efektif dalam sebuah projek.
 ### Develop.
 Sebagai front end developer dan calon full stack developer masa depan, saya tahu bagaimana sebuah website di tampilkan dalam berbagai media yang sesuai dengan perkembangan jaman.
+
