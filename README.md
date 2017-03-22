@@ -2,33 +2,13 @@
 ## About This Site
 Website ini adalah copy dari website saya sebelumnya, yakni [priambodokurniawan.my.id](https://www.priambodokurniawan.my.id) yang dikerjakan dalam versi html sederhana (statik). 
 
-## Used Tags & Syntaxes
-Adapun tag HTML yang digunakan pada situs ini antara lain
+## Source & Framework
+Adapun source dan framework HTML yang digunakan pada situs ini antara lain
 
-> **Tag Penting**
->  - H1, H2, H3, H4
->  - p
->  - img
->  - ul
->  - li
->  - a
->  - nav
->  - section
->  - div
-
-> **Syntax Penting**
->  - font-family: Lato
->  - Background-master: #444444 
->  - Background-primary: #BF212F 
->  - Background-info: #999999 
->  - Background-orange: #F89521 
->  - Background-success: #38B248 
->  - Background-danger: #E04F4F 
->  - Background-warning: #FFC907 
->  - h1: 2em
->  - h2: 1.5em
->  - h3: 1.3em
->  - h4: 1.1em
+1. [Bootstrap](http://getbootstrap.com/)
+2. [Font Awesome](http://fontawesome.io/icons/)
+3. [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
+4. [ScrollReveal](https://scrollrevealjs.org/)
 
 ## About Me
 Saya adalah graphic and web designer and developer yang berlokasi di Jakarta, Indonesia. Saya memiliki passion di dunia website. Website yang tidak hanya baik di layar besar, namun juga bagus di handphone (responsive web).
