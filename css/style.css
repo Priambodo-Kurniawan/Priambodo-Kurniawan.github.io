@@ -548,7 +548,35 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 @media (max-width: 768px) {
-  .link-on-header {
+  .link-on-header,
+  .slider-content hr {
+    display: none;
+  }
+  .slider-content h3 {
     font-size: 14px;
-}
+  }
+  .slider-content h1 {
+    font-size: 20px;
+  }
+  #myCarousel {
+    margin-top: 50px;
+  }
+  .slider-content {
+    margin-left: 30px;
+  }
+  p {
+    font-size: 13px;
+  }
+  section, .section {
+    padding: 50px 0;
+  }
+  .service-img {
+    max-width: 55px !important;
+  }
+  .project-category {
+    font-size: 10px !important;
+  }
+  .project-name {
+    font-size: 12px !important;
+  }
 }
