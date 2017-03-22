@@ -564,7 +564,8 @@ body {
   .slider-content {
     margin-left: 30px;
   }
-  p {
+  p,
+  a.btn {
     font-size: 13px;
   }
   section, .section {
@@ -578,5 +579,11 @@ body {
   }
   .project-name {
     font-size: 12px !important;
+  }
+  .who-icon {
+    max-width: 45px !important;
+  }
+  .who-subtitle {
+    margin-top: 0 !important;
   }
 }
