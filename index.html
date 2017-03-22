@@ -64,21 +64,78 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h3 class="homeSubHeading">HELLO MY NAME IS</h3>
-                <h1 id="homeHeading">Priambodo Nur Kurniawan</h1>
-                <hr>
-                <div class="link-on-header">
-                    <a href="#about" class="text-white page-scroll sr-button">
-                        <div class="btn btn-circle btn-border"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
-                        See What can I do for you
-                    </a>
+    <div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item relative active">
+                    <img src="img/header.jpg" alt="Priambodo Kurniawan" class="full-width">
+                    <div class="container slider-inner text-white">
+                        <div class="slider-content">
+                            <h3 class="homeSubHeading">HELLO MY NAME IS</h3>
+                            <h1 id="homeHeading">Priambodo Nur Kurniawan</h1>
+                            <hr>
+                            <div class="link-on-header">
+                                <a href="#about" class="text-white page-scroll">
+                                    <div class="btn btn-circle btn-border"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    See What I can do for you
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative">
+                    <img src="img/header2.jpg" alt="Priambodo Kurniawan" class="full-width">
+                    <div class="container slider-inner text-white">
+                        <div class="slider-content">
+                            <h3 class="homeSubHeading">I AM THE NEXT</h3>
+                            <h1 id="homeHeading">Full Stack Developer</h1>
+                            <hr>
+                            <div class="link-on-header">
+                                <a href="#about" class="text-white page-scroll">
+                                    <div class="btn btn-circle btn-border"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    See What I can do for you
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item relative">
+                    <img src="img/header3.jpg" alt="Priambodo Kurniawan" class="full-width">
+                    <div class="container slider-inner text-white">
+                        <div class="slider-content">
+                            <h3 class="homeSubHeading">I HAVE PASSION FOR</h3>
+                            <h1 id="homeHeading">WEBSITE DEVELOPMENT</h1>
+                            <hr>
+                            <div class="link-on-header">
+                                <a href="#about" class="text-white page-scroll">
+                                    <div class="btn btn-circle btn-border"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                    See What I can do for you
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </header>
+    </div>
 
     <section class="bg-white" id="about">
         <div class="container">
