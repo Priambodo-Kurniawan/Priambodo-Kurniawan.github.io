@@ -199,14 +199,14 @@ a.open-btn {
   background: #2f3238;
   color: #fff;
 }
-.container.overflow {
-    position: relative; 
-    overflow: scroll;
-}
 @media screen and (max-width: 40em) {
   .codrops-header {
     padding: 2em 3vw; }
 
+  .container.overflow {
+    position: relative; 
+    overflow: auto;
+  }
   .codrops-header h1 {
     font-size: 28px; }
 
