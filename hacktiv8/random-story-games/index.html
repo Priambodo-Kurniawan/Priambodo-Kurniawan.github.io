@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tell Your Story Games</title>
+		<meta name="description" content="Simple ideas for enhancing text input interactions" />
+		<meta name="keywords" content="input, text, effect, focus, transition, interaction, inspiration, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="codrops-header">
+				<h1>Your Random Story <span>Buat cerita randommu sendiri berdasarkan data dirimu!</span></h1>
+			</header>
+			<section class="content bgcolor-1">
+				<h2>Nomer Handphonemu <span>Cerita berdasarkan 3 digit terakhir nomer teleponmu.</span></h2>
+				<img class="media-item__img display-block" src="img/smartphone.png">
+				<span class="input input--nao">
+					<input class="input__field input__field--nao" onkeyup="validatePhone()" type="text" id="phoneNumber" />
+					<label class="input__label input__label--nao" for="input-1">
+						<span class="input__label-content input__label-content--nao">Masukan Nomer HP mu!</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+				</span>
+				<div class="info" id="phonePrompt"></div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-goo-1">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+							<feComposite in="SourceGraphic" in2="goo" />
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-1" class="button button--1 display-block" onclick="validateForm()">
+					Buat Cerita
+					<span class="button__container">
+						<span class="circle top-left"></span>
+						<span class="circle top-left"></span>
+						<span class="circle top-left"></span>
+						<span class="button__bg"></span>
+						<span class="circle bottom-right"></span>
+						<span class="circle bottom-right"></span>
+						<span class="circle bottom-right"></span>
+					</span>
+				</button>
+				<div class="info submit-prompt" id="submitPrompt"></div>
+				<p class="content-story  hide title" id="yourPhoneNumber"></p>
+				<div id="storyPhoneNumberWrapper" class="hide">
+					<p class="content-story" id="storyHariIni"></p>
+					<p class="content-story" id="storyPhoneNumber"></p>
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+						<defs>
+							<filter id="filter-goo-2">
+								<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+								<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+								<feComposite in="SourceGraphic" in2="goo" />
+							</filter>
+						</defs>
+					</svg>
+					<button id="component-2" class="button button--2 display-block next" style="filter: url('#filter-goo-2')" onclick="jsShow('cerita2')">
+						Lanjutkan Cerita
+						<span class="button__bg"></span>
+					</button>
+				</div>
+			</section>
+			<section class="content bgcolor-3 hide" id="cerita2">
+				<h2>Data Dirimu <span>Cerita berdasarkan data dirimu.</span></h2>
+				<img class="media-item__img display-block" src="img/notepad.png">
+				<span class="input input--nao display-block" onkeyup="validateNama()">
+					<input class="input__field input__field--nao" type="text" id="Nama" />
+					<label class="input__label input__label--nao" for="Nama">
+						<span class="input__label-content input__label-content--nao">Tuliskan Namamu.</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+				</span>
+				<div class="info" id="namaPrompt"></div>
+				<span class="input input--nao small-input" onkeyup="validateTanggalLahir()" >
+					<input class="input__field input__field--nao" type="text" id="TanggalLahir" />
+					<label class="input__label input__label--nao" for="TanggalLahir">
+						<span class="input__label-content input__label-content--nao">Tgl Lahir</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+					<div class="info small-info" id="tglPrompt"></div>
+				</span>
+				<span class="input input--nao small-input" onkeyup="validateBulanLahir()" >
+					<input class="input__field input__field--nao" type="text" id="BulanLahir" />
+					<label class="input__label input__label--nao" for="BulanLahir">
+						<span class="input__label-content input__label-content--nao">Bln Lahir</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+					<div class="info small-info" id="blnPrompt"></div>
+				</span>
+				<span class="input input--nao small-input"  onkeyup="validateTahunLahir()">
+					<input class="input__field input__field--nao" type="text" id="TahunLahir" />
+					<label class="input__label input__label--nao" for="TahunLahir">
+						<span class="input__label-content input__label-content--nao">Thn Lahir</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+					<div class="info small-info" id="thnPrompt"></div>
+				</span>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-goo-3">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+							<feComposite in="SourceGraphic" in2="goo" />
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-3" onclick="validateForm2(month)" class="button button--2 button--3 display-block" style="filter: url('#filter-goo-3')">
+					Buat Cerita
+					<span class="button__bg"></span>
+				</button>
+				<div class="info submit-prompt" id="submitPrompt2"></div>
+				<div id="storyDateWrapper" class="hide">
+					<p class="content-story" id="storySaya"></p>
+					<p class="content-story" id="storyKemarin"></p>
+					<p class="content-story" id="penutup"></p>
+				</div>
+			</section>
+			<div class="bgcolor-4 footer">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-xs-12 text-center">
+		                    <p>© Priambodo Kurniawan 2017 | Source UX: tympanus.net </p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- /container -->
+		<script src="js/RandomStory.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/button.js"></script>
+	</body>
+</html>
