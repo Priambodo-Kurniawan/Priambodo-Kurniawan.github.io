@@ -148,8 +148,20 @@ h5 {
     padding: 2em 3vw; }
 
   .codrops-header h1 {
-    font-size: 2.8em; }
+    font-size: 2em; }
 
+  .content h2 {
+    font-size: 1.2em;
+  }
+
+  .info {
+    margin: -1em 15px 1.5em;
+  }
+
+  .content {
+    font-size: 100%;
+    padding: 3em 10px;
+  }
   .section {
     margin: 0;
     width: 100%;
