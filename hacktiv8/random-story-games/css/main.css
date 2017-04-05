@@ -192,6 +192,17 @@ a.close-btn {
 a.open-btn {
     letter-spacing: 1px;
 }
+#aturan .container {
+    max-width: 500px;
+}
+#aturan.open {
+  background: #2f3238;
+  color: #fff;
+}
+.container.overflow {
+    position: relative; 
+    overflow: scroll;
+}
 @media screen and (max-width: 40em) {
   .codrops-header {
     padding: 2em 3vw; }
