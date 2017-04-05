@@ -1,3 +1,45 @@
+var VariabelPertama = [
+	"lagi asyik mancing ikan",
+	"lagi menyisir rambut",
+	"lagi tidur",
+	"lagi mandi",
+	"lagi asyik pacaran",
+	"lagi minum es teh",
+	"lagi pake celana",
+	"lagi asik nyanyi",
+	"lagi dorong motor",
+	"lagi ngintip orang mandi"
+]
+
+var VariabelKedua = [
+	"aku digoyang goyang",
+	"aku ditagih utang",
+	"aku digendong",
+	"aku dicium",
+	"aku diceburin kali sama",
+	"aku ditraktir",
+	"aku dilempar tahu sama",
+	"aku dipentung",
+	"aku dicariin",
+	"aku dipelototin"
+]
+
+var VariabelKetiga = [
+	"Pak Lurah",
+	"ibu kosku",
+	"Satpol PP",
+	"tukang sayur",
+	"tukang becak",
+	"anak kecil ga pake baju",
+	"tukang kredit",
+	"dukun bayi",
+	"maling kambing",
+	"orang ganteng"
+]
+
+var data = [VariabelPertama, VariabelKedua, VariabelKetiga];
+
+
 function validatePhone() { //validasi nomer telepon
 	var phone = document.getElementById("phoneNumber").value;
 	if (phone.length == 0) {
@@ -94,46 +136,6 @@ function printVariabel(variabel, id){
     }
 }
 
-var VariabelPertama = [
-	"lagi asyik mancing ikan",
-	"lagi menyisir rambut",
-	"lagi tidur",
-	"lagi mandi",
-	"lagi asyik pacaran",
-	"lagi minum es teh",
-	"lagi pake celana",
-	"lagi asik nyanyi",
-	"lagi dorong motor",
-	"lagi ngintip orang mandi"
-]
-
-var VariabelKedua = [
-	"aku digoyang goyang",
-	"aku ditagih utang",
-	"aku digendong",
-	"aku dicium",
-	"aku diceburin kali sama",
-	"aku ditraktir",
-	"aku dilempar tahu sama",
-	"aku dipentung",
-	"aku dicariin",
-	"aku dipelototin"
-]
-
-var VariabelKetiga = [
-	"Pak Lurah",
-	"ibu kosku",
-	"Satpol PP",
-	"tukang sayur",
-	"tukang becak",
-	"anak kecil ga pake baju",
-	"tukang kredit",
-	"dukun bayi",
-	"maling kambing",
-	"orang ganteng"
-]
-
-var data = [VariabelPertama, VariabelKedua, VariabelKetiga];
 
 // n Angka Terakhir
 function AngkaTerakhir(input, n){
