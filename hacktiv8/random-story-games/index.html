@@ -20,6 +20,7 @@
 		<div class="container">
 			<header class="codrops-header">
 				<h1>Your Random Story <span>Buat cerita randommu sendiri berdasarkan data dirimu!</span></h1>
+				<a href="#" class="open-btn" onclick="addClass('aturan')"><b>Klik disini</b> untuk Lihat Aturan Main</a>
 			</header>
 			<section class="content bgcolor-1">
 				<h2>Nomer Handphonemu <span>Cerita berdasarkan 3 digit terakhir nomer teleponmu.</span></h2>
@@ -136,6 +137,19 @@
 					<p class="content-story" id="storySaya"></p>
 					<p class="content-story" id="storyKemarin"></p>
 					<p class="content-story" id="penutup"></p>
+				</div>
+			</section>
+			<section id="aturan">
+				<div class="content bgcolor-4">
+					<a href="#" class="close-btn" onclick="removeClass('aturan')">×</a>
+					<h1 class="title-variabel">Cara Main</h1>
+					<p class="cara-main">Masukan input-input yang ada sesuai dengan data-datamu. Angka terakhir dari input tersebut akan tampil sesuai dengan variabel yang sudah ditentukan di bawah.</p>
+					<h3 class="title-variabel">Variabel Pertama</h3>
+					<p id="variabel1" class="cara-main"></p>
+					<h3 class="title-variabel">Variabel Kedua</h3>
+					<p id="variabel2" class="cara-main"></p>
+					<h3 class="title-variabel">Variabel Ketiga</h3>
+					<p id="variabel3" class="cara-main"></p>
 				</div>
 			</section>
 			<div class="bgcolor-4 footer">

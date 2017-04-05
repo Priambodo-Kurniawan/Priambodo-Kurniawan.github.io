@@ -1,4 +1,4 @@
-function validatePhone() {
+function validatePhone() { //validasi nomer telepon
 	var phone = document.getElementById("phoneNumber").value;
 	if (phone.length == 0) {
 		producePrompt("Tulis Nomor Teleponmu", "phonePrompt", "red");
@@ -12,7 +12,7 @@ function validatePhone() {
 	return true;
 }
 
-function validateTanggalLahir() {
+function validateTanggalLahir() { //validasi tanggal lahir
 	var tglLahir = document.getElementById("TanggalLahir").value;
 	if (tglLahir.length == 0) {
 		producePrompt("Tanggal Lahirmu", "tglPrompt", "red");
@@ -26,7 +26,7 @@ function validateTanggalLahir() {
 	return true;
 }
 
-function validateBulanLahir() {
+function validateBulanLahir() { // validasi bulan lahir
 	var blnLahir = document.getElementById("BulanLahir").value;
 	if (blnLahir.length == 0) {
 		producePrompt("bulan Lahirmu", "blnPrompt", "red");
@@ -40,7 +40,7 @@ function validateBulanLahir() {
 	return true;
 }
 
-function validateTahunLahir() {
+function validateTahunLahir() { //validasi tahun lahir
 	var thnLahir = document.getElementById("TahunLahir").value;
 	if (thnLahir.length == 0) {
 		producePrompt("Tahun Lahirmu", "thnPrompt", "red");
@@ -54,7 +54,7 @@ function validateTahunLahir() {
 	return true;
 }
 
-function validateNama() {
+function validateNama() { //validasi nama
 	var nama = document.getElementById("Nama").value;
 	if (nama.length == 0) {
 		producePrompt("Tulis Namamu", "namaPrompt", "red");
@@ -64,16 +64,34 @@ function validateNama() {
 	return true;
 }
 
-function producePrompt(message, promptLocation, color) {
+function producePrompt(message, promptLocation, color) { //alert message
 	document.getElementById(promptLocation).innerHTML = message;
 	document.getElementById(promptLocation).style.color = color;
 }
 
-function jsShow(id) {
+function jsShow(id) { //show element
 	document.getElementById(id).style.display="block";
 }
-function jsHide(id) {
+
+function jsHide(id) { //hide element
 	document.getElementById(id).style.display="none";
+}
+function addClass(id) { // add class
+	var el = document.getElementById(id);
+	el.className = 'open';
+}
+
+function removeClass(id) { // remove class
+	var el = document.getElementById(id);
+	el.className = 'close';
+}
+
+function printVariabel(variabel, id){
+	for (var i = 0; i<variabel.length; i++){
+		document.getElementById(id).innerHTML +=
+    	i + ' = ' +
+   	 	variabel[i] + '. <br/>'
+    }
 }
 
 var VariabelPertama = [
@@ -220,6 +238,11 @@ var Angka = function(input, id){
 	var namaBulan = month[d.getMonth()];
 	var namaHariIni = weekday[d.getDay()];
 	var phone = document.getElementById("phoneNumber").value;
+
+// Print Variabel
+printVariabel(VariabelPertama, 'variabel1');
+printVariabel(VariabelKedua, 'variabel2');
+printVariabel(VariabelKetiga, 'variabel3');
 
 // Submit Form
 function validateForm() {
