@@ -148,10 +148,13 @@ h5 {
     padding: 2em 3vw; }
 
   .codrops-header h1 {
-    font-size: 2em; }
+    font-size: 28px; }
 
   .content h2 {
     font-size: 1.2em;
+  }
+  .footer p {
+    font-size: 10px;
   }
 
   .info {
