@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+        <h1>Registration Form</h1>
+	    <form>
+        	<div class="form-group">
+                <div class="label">Username</div>
+                <input type="text" class="form-control" id="username" value="" />
+            </div>
+            <div class="form-group">
+                <div class="label">Password</div>
+                <input type="password" class="form-control" id="password" value="" />
+            </div>
+            <div class="form-group">
+                <div class="label">Confirm Password</div>
+                <input type="password" class="form-control" id="confirmPassword" value="" />
+            </div>
+            <div class="form-group">
+                <div class="label">Email</div>
+                <input type="email" class="form-control" id="email" value="" />
+            </div>
+            <div class="form-group">
+                <div class="label">Confirm Email</div>
+                <input type="email" class="form-control" id="confirmEmail" value="" />
+            </div>
+            <div class="button"><button type="submit" class="btn" id="sumbit">Submit</button></div>
+	   </form>
+    </div>
+    <div class='overlayer' id='overlayer'>
+      <div class="alert">
+        <div id="message">
+          Hello
+        </div>
+        <div class="action-button">
+            <button id='ok'>OK</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
