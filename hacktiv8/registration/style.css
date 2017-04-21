@@ -126,7 +126,7 @@ h1 {
   margin: 20px;
 }
 
-@media only screen and (max-width : 600px) {
+@media screen and (max-width: 600px) {
 .container {
     position: relative;
     margin: 20px auto;
@@ -140,7 +140,7 @@ h1 {
 }
 }
 
-@media only screen and (max-width : 360px) {
+@media screen and (max-width: 360px) {
 .container {
     position: relative;
     margin: 20px 10px;
