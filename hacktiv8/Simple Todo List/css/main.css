@@ -31,7 +31,27 @@
 
   .github-corner .octo-arm {
     -webkit-animation: octocat-wave 560ms ease-in-out;
-    animation: octocat-wave 560ms ease-in-out; } }
+    animation: octocat-wave 560ms ease-in-out; } 
+
+  .alert {
+    width: 75% !important;
+    transform: translate(-50%, -35%) !important;
+  }
+  .action-button button {
+    font-size: 12px;
+  }
+  .ac-custom input[type="checkbox"], .ac-custom input[type="radio"], .ac-custom label::before {
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 38px;
+    margin-top: -15px;
+  }
+  .ac-custom input[type="checkbox"]:checked + label:after {
+    left: 39px !important;
+    bottom: -2px !important;
+  }
+  }
 /* Related demos */
 .content--related {
   font-weight: bold;

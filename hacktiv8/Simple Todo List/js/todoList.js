@@ -15,7 +15,7 @@ function producePrompt(message, promptLocation) {
 }
 
 function confirmation(message, confirmLocation, el) {
-	jsShow('overlayer2');
+	setTimeout(function(){jsShow('overlayer2')}, 1000);
     document.getElementById(confirmLocation).innerHTML = message;
     var no = document.getElementById('no');
 	no.addEventListener('click', function(){
