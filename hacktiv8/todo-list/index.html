@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple Todo List</title>
+		<meta name="description" content="Buat to do list mu" />
+		<meta name="author" content="Priambodo Kurniawan" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set2.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container overflow">
+			<header class="codrops-header">
+				<h1>Simple To Do List <span>Daftar apa yang akan kamu lakuakan.</span></h1>
+			</header>
+			<section class="content bgcolor-4">
+				<h2>What to do</h2>
+				<img class="media-item__img display-block" src="img/notepad.png">
+				<form class="ac-custom ac-checkbox ac-checkmark" autocomplete="off">
+					<ul id='whatToDo'>
+					</ul>
+				</form>
+				<span class="input input--nao">
+					<input class="input__field input__field--nao" type="text" id="toDo" />
+					<label class="input__label input__label--nao" for="input-1">
+						<span class="input__label-content input__label-content--nao">Apa yang akan kamu lakukan?</span>
+					</label>
+					<svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+					</svg>
+				</span>
+				<div class="info" id="phonePrompt"></div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+					<defs>
+						<filter id="filter-goo-1">
+							<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+							<feComposite in="SourceGraphic" in2="goo" />
+						</filter>
+					</defs>
+				</svg>
+				<button id="component-1" class="button button--1 display-block">
+					Simpan
+					<span class="button__container">
+						<span class="circle top-left"></span>
+						<span class="circle top-left"></span>
+						<span class="circle top-left"></span>
+						<span class="button__bg"></span>
+						<span class="circle bottom-right"></span>
+						<span class="circle bottom-right"></span>
+						<span class="circle bottom-right"></span>
+					</span>
+				</button>
+				<div class="info submit-prompt" id="submitPrompt"></div>
+			</section>
+			<div class='overlayer' id='overlayer'>
+		        <div class="alert">
+		            <div id="message">
+		            </div>
+		            <div class="action-button">
+		            	<button id='ok'>OK</button>
+		            </div>
+		        </div>
+		    </div>
+		    <div class='overlayer' id='overlayer2'>
+		        <div class="alert">
+		            <div id="message2">
+		            </div>
+		            <div class="action-button">
+		            	<button id='yes'>Ya</button>
+		            	<button id='no'>Tidak</button>
+		            </div>
+		        </div>
+		    </div>
+			<div class="bgcolor-4 footer">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-xs-12 text-center">
+		                    <p>© Priambodo Kurniawan 2017 | Source UX: tympanus.net </p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/button.js"></script>
+		<script src="js/todoList.js"></script>
+	</body>
+</html>

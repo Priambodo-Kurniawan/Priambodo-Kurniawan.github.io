@@ -1,0 +1,131 @@
+Simpan variabel pertama dengan urutan sebagai berikut
+	"lagi asyik mancing ikan",
+	"lagi menyisir rambut",
+	"lagi tidur",
+	"lagi mandi",
+	"lagi asyik pacaran",
+	"lagi minum es teh",
+	"lagi pake celana",
+	"lagi asik nyanyi",
+	"lagi dorong motor",
+	"lagi ngintip orang mandi"
+
+Simpan variabel kedua dengan urutan sebagai berikut
+	"aku digoyang goyang",
+	"aku ditagih utang",
+	"aku digendong",
+	"aku dicium",
+	"aku diceburin kali sama",
+	"aku ditraktir",
+	"aku dilempar tahu sama",
+	"aku dipentung",
+	"aku dicariin",
+	"aku dipelototin"
+ 
+ Simpan variabel ketiga dengan urutan sebagai berikut
+	"Pak Lurah",
+	"ibu kosku",
+	"Satpol PP",
+	"tukang sayur",
+	"tukang becak",
+	"anak kecil ga pake baju",
+	"tukang kredit",
+	"dukun bayi",
+	"maling kambing",
+	"orang ganteng"
+
+Simpan ketiga variabel tersebut dalam satu data
+
+Buat Fungsi validasi nomer telepon
+	Simpan dan ambil data nomer telepon dari input
+	Jika nomer telepon tidak diisi
+		tulis bahwa telpon perlu
+		nomer telepon bernilai false
+	jika nomer telepon berisi selain angka dan kurang dari 11 digit
+		tulis bahwa telpon hanya berisi angka
+		nomer telepon bernilai false
+	tulis bahwa nomer telpon benar
+	nomer telepon bernilai true
+
+Buat fungsi tanggal lahir
+	Simpan dan ambil data tanggal lahir dari input
+	Jika tanggal lahir tidak diisi
+		tulis bahwa tanggal lahir perlu
+		tanggal lahir bernilai false
+	tulis tanggal lahir benar
+	tanggal lahir bernilai true
+
+Buat fungsi bulan lahir
+	Simpan dan ambil data bulan lahir dari input
+	Jika bulan lahir tidak diisi
+		tulis bahwa bulan lahir perlu
+		bulan lahir bernilai false
+	tulis bulan lahir benar
+	bulan lahir bernilai true
+
+Buat fungsi tahun lahir
+	Simpan dan ambil data tahun lahir dari input
+	Jika tahun lahir tidak diisi
+		tulis bahwa tahun lahir perlu
+		tahun lahir bernilai false
+	tulis tahun lahir benar
+	tahun lahir bernilai true
+
+Buat fungsi nama
+	Simpan dan ambil data nama dari input
+	Jika nama tidak diisi
+		tulis bahwa nama perlu
+		nama bernilai false
+	tulis nama benar
+	nama bernilai true
+
+Buat fungsi untuk mengambil angka terakhir dari input sejumlah n
+	panggil n digit terakhir input, pisahkan menjadi array dan simpan
+	buat pengulangan (for) dengan index=0, index kurang dari n, tambahkan 1 dari index
+		simpan nilai index dan kembalikan menjadi nilai angka
+		simpan nilai input
+	end for
+
+Buat fungsi dengan mengambil nilai dari angka terakhir
+	simpan masing-masing 3 angka terakhir dari nilai angka terakhir
+	simpan dan buat variable ke4 dengan menghilangkan kata pertama dari varibel pertama
+	buat fungsi cerita pertama dengan parameter id
+		tuliskan 'Cerita dimulai dari aku yang ' + 
+	      ambil variable pertama dengan urutan = nilai angka pertama + '; tanpa tau apa-apa, ' + 
+	      ambil variable kedua dengan urutan = nilai angka kedua + ' ' + 
+	      ambil variable ketiga dengan urutan = nilai angka ketiga '.' +
+	      [variasikan nilai dengan kombinasi [Math.floor(Math.pow(10, Math.random()))]]
+    ;
+    buat fungsi cerita kedua dengan parameter id
+		buat pengulangan dengan nilai index adalah 5, index lebih besar dari 1 dan berkurang 1 point tiap pengulangan
+		  jika i adalah 5
+		  	tuliskan variabel pertama dengan nilai angka pertama dari angka terakhir;
+		  	tuliskan variabel kedua dengan nilai angka kedua dari angka terakhir;
+		  	tuliskan variabel ketiga dengan nilai angka ketiga dari angka terakhir;
+		  else i bukan 5
+		  	i + ' hari yang lalu ' +
+       	 	tuliskan variabel pertama dengan nilai [Math.floor(Math.pow(10, Math.random()))]
+        	tuliskan variabel kedua dengan nilai [Math.floor(Math.pow(10, Math.random()))]
+        	tuliskan variabel ketiga dengan nilai [Math.floor(Math.pow(10, Math.random()))]
+    ;
+
+Buat fungsi validasi input cerita pertama
+	jika nomer telepon tidak sama dengan true
+		tuliskan bahwa telepon harus valid
+	else
+		simpan nomer telepon dari input
+		ambil tiga nomer terakhir dari telepon
+		tuliskan 3 angka terakhir
+		tuliskan alur cerita pertama dari nilai 3 angka terakhir telepon
+
+Buat fungsi validasi input cerita kedua
+	jika nama atau tanggal atau bulan atau tahun tidak sama dengan true
+		tuliskan bahwa form harus semua valid
+	else
+		simpan nilai nama
+		simpan nilai tanggal
+		simpan nilai bulan
+		simpan nilai tahun
+		simpan full nilai dari tanggal lahir dengan masing-masing angka terakhir
+		tuliskan nilai nama
+		tuliskan alur cerita kedua dari nilai 3 angka terakhir dari  full nilai dari tanggal lahir
